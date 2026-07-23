@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-paper: #FCFCFA;
+    --color-grid: #ECEDF0;
+    --color-ink: #10141C ;
+    --color-ink-2: #5A6272 ;
+    --color-cobalt: #2244CC;
+    --color-line: #D7DAE1 ;
+    --font-display: "Sora", sans-serif;
+    --font-body: "Public Sans", sans-serif;
+    --font-mono:  "JetBrains Mono", monospace;
+   
+}

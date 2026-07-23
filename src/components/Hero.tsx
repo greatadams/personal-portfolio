@@ -6,7 +6,9 @@ export default function Hero() {
         <h3>
           Software Developer — Distributed Backends · Web & Mobile Frontends
         </h3>
-        <h1>I build production systems that real businesses run on.</h1>
+        <h1 className="text-ink-2 font-mono">
+          I build production systems that real businesses run on.
+        </h1>
         <p>MEASURED IN PRODUCTION</p>
         <p>
           Java and Spring Boot services with Kafka and gRPC on the back; React
