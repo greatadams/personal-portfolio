@@ -16,7 +16,7 @@ export const projects: Project[] = [
         projectSubtitle:"RAMP SAFETY & EQUIPMENT CONTROL MAINTAIR AVIATION SERVICES",
         projectParagraph:"Equipment checkout and pre-use safety inspection system built and delivered for MaintAir Aviation Services. Backend built end to end — JWT authentication, checkout/check-in flows, inspection checklist logic, and a live equipment status dashboard. Delivered across two releases against the client's requirements.",
         projectStack:["Spring Boot", "JWT/RBAC", "React · TypeScript", "Vercel"],
-        projectLink:["https://rampsecure.vercel.app/","https://github.com/greatadams/rampsecure"],
+        projectLink:[{label: "Live app", url: "https://rampsecure.vercel.app/"}, {label: "Source", url: "https://github.com/greatadams/rampsecure"}],
         projectStatus: "DELIVERED TO CLIENT",
         projectPreview:["assets/rampsecure-1.png", "assets/rampsecure-2.png"],
     },
@@ -26,7 +26,7 @@ export const projects: Project[] = [
         projectSubtitle:"DISTRIBUTED SYSTEMS DEEP-DIVE MICROSERVICES",
         projectParagraph:"A distributed ticketing system built around the hard problem: many buyers, one seat, same moment. Pessimistic and optimistic locking for concurrent booking, gRPC for inter-service calls, Kafka for order events, Redis for seat-hold timers and caching.",
         projectStack:["Java · Spring Boot", "Kafka", "PostgreSQL", "gRPC", "Redis"],
-        projectLink:["https://github.com/greatadams/ticketingApp"],
+        projectLink:[{label:"Source", url: "https://github.com/greatadams/ticketingApp" }],
         projectStatus: "COMPLETE · LIVE",
        
     },
