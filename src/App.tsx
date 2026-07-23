@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Experiences from './components/Experience';
 import StackTable from './components/StackTable';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Projects />
       <StackTable />
       <Experiences />
+      <Footer />
     </>
   );
 }
