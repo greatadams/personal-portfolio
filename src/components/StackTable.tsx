@@ -8,9 +8,9 @@ export default function StackTable() {
           <p className="font-mono text-xs text-cobalt uppercase tracking-widest mb-3">
             Doc / Bill of materials
           </p>
-          <h3 className="font-display font-extrabold text-3xl tracking-tight ">
+          <h2 className="font-display font-extrabold text-3xl tracking-tight ">
             Stack
-          </h3>
+          </h2>
         </div>
         <div className="border-[1.5px] border-ink  bg-paper ">
           {stack.map((sta) => {
