@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <header className="border-ink py-20 ">
+    <header className="border-ink py-20  border-b-[1.5px]">
       <div className=" max-w-5xl mx-auto px-6 border-[1.5px] border-ink bg-paper p-14 space-y-5">
         <h3 className="font-mono text-sm text-cobalt">
           Software Developer — Distributed Backends · Web & Mobile Frontends

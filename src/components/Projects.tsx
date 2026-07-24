@@ -2,48 +2,85 @@ import { projects } from '../data/project';
 
 export default function Projects() {
   return (
-    <div>
-      <p>Doc / Deployed systems</p>
-      <h2>Built for real clients</h2>
-      <div>
+    <section className=" border-b-[1.5px] border-ink py-20 " id="work">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="mb-10">
+          <p className="font-mono text-xs text-cobalt uppercase tracking-widest mb-3">
+            Doc / Deployed systems
+          </p>
+          <h2 className="font-display font-extrabold text-3xl tracking-tight ">
+            Built for real clients
+          </h2>
+        </div>
+
         {projects.map((project) => {
           return (
-            <div key={project.projectTitle}>
-              <span>{project.projectTitle}</span>
-              <span>{project.projectSubtitle}</span>
-              <span>{project.projectStatus}</span>
-              <span>{project.projectParagraph}</span>
-              {project.projectStack.map((list) => {
-                return <span key={list}>{list}</span>;
-              })}
-              {project.projectLink && (
-                <span>
-                  {project.projectLink.map((link) => {
+            <div
+              className="bg-paper grid grid-cols-[280px_1fr] border-[1.5px] border-ink mb-[-1.5px]"
+              key={project.projectTitle}
+            >
+              <div className="border-r-[1.5px] border-ink  p-8 flex flex-col  ">
+                <span className="font-display font-bold text-xl">
+                  {project.projectTitle}
+                </span>
+                <span className="font-mono text-xs text-cobalt leading-relaxed">
+                  {project.projectSubtitle}
+                </span>
+                <span className="mt-auto font-mono text-xs text-ink-2">
+                  {project.projectStatus}
+                </span>
+              </div>
+
+              <div className=" p-8 ">
+                <p className="text-ink-2 max-w-[64ch] ">
+                  {project.projectParagraph}
+                </p>
+                <div className="flex flex-wrap border border-line mt-5">
+                  {project.projectStack.map((list) => {
                     return (
-                      <a href={link.url} key={link.url}>
-                        {link.label}
-                      </a>
+                      <span
+                        className="font-mono text-xs px-3 py-1 border-r border-line text-ink-2 last:border-r-0"
+                        key={list}
+                      >
+                        {list}
+                      </span>
                     );
                   })}
-                </span>
-              )}
-              {project.projectPreview && (
-                <span>
-                  {project.projectPreview.map((img) => {
-                    return (
-                      <img
-                        src={img}
-                        key={img}
-                        alt="description per slide preview"
-                      />
-                    );
-                  })}
-                </span>
-              )}
+                </div>
+
+                {project.projectLink && (
+                  <div className="flex gap-5 mt-5">
+                    {project.projectLink.map((link) => {
+                      return (
+                        <a
+                          className="font-mono text-sm text-cobalt border-b-[1.5px] border-cobalt"
+                          href={link.url}
+                          key={link.url}
+                        >
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
+                {project.projectPreview && (
+                  <div>
+                    {project.projectPreview.map((img) => {
+                      return (
+                        <img
+                          src={img}
+                          key={img}
+                          alt="description per slide preview"
+                        />
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
             </div>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }
