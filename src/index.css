@@ -12,3 +12,11 @@
     --font-mono:  "JetBrains Mono", monospace;
    
 }
+
+body {
+  background-color: #FCFCFA;
+  background-image:
+    linear-gradient(#ECEDF0 1px, transparent 1px),
+    linear-gradient(90deg, #ECEDF0 1px, transparent 1px);
+  background-size: 28px 28px;
+}
