@@ -7,14 +7,14 @@ export default function Footer() {
             Doc / Contact
           </p>
         </div>
-        <h2 className="text-4xl font-display font-extrabold leading-tight tracking-tight max-w-[18ch]">
+        <h2 className="text-3xl md:text-5xl font-display font-extrabold leading-tight tracking-tight max-w-[18ch]">
           If your team ships real software for real users, let's talk.
         </h2>
         <p className="text-ink-2 mt-2 max-w-[64ch]">
           Open to software developer roles in Manitoba and across Canada.
         </p>
 
-        <ul className="flex gap-3 mt-8 list-none ">
+        <ul className="flex  flex-wrap gap-3 mt-8 list-none ">
           <li>
             <a
               href="mailto:adamsgreat15@gmail.com"
@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <div className="flex justify-between border-t border-line pt-5 mt-16 ">
+        <div className="flex flex-col md:flex-row gap 2 md:justify-between border-t border-line pt-5 mt-16 ">
           <p className="text-ink-2 text-sm font-mono"> © 2026 GREAT ADAMU</p>
           <p className="text-ink-2 text-sm font-mono">REV 2.1 - SHEET 1 OF 1</p>
         </div>
