@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
     <header className="border-ink py-20  border-b-[1.5px]">
-      <div className=" max-w-5xl mx-auto px-6 border-[1.5px] border-ink bg-paper p-14 space-y-5">
+      <div className=" max-w-5xl mx-auto px-6 border-[1.5px] border-ink bg-paper p-6 md:p-14 space-y-5">
         <h3 className="font-mono text-sm text-cobalt">
           Software Developer — Distributed Backends · Web & Mobile Frontends
         </h3>
-        <h1 className="text-4xl font-display font-extrabold leading-tight tracking-tight max-w-[17ch]">
+        <h1 className="text-3xl md:text-5xl font-display font-extrabold leading-tight tracking-tight max-w-[17ch]">
           I build production systems that{' '}
           <span className="text-cobalt">real businesses </span> run on.
         </h1>
@@ -20,7 +20,7 @@ export default function Hero() {
           requirements, end to end.
         </p>
 
-        <ul className="flex gap-3  border-ink list-none bg-paper">
+        <ul className="flex flex-wrap gap-3  border-ink list-none bg-paper">
           <li>
             <a
               href="#work"
@@ -47,20 +47,20 @@ export default function Hero() {
           </li>
         </ul>
 
-        <div className="grid grid-cols-4 font-mono border-t-[1.5px] border-line ">
-          <div className="border-r border-line px-4 py-3">
+        <div className="grid grid-cols-2 md:grid-cols-4 font-mono border-t-[1.5px] border-line ">
+          <div className="border-[0.5px] border-line px-4 py-3">
             <p className="text-sm  text-ink-2">DRAWN BY</p>
             <p>G. ADAMU</p>
           </div>
-          <div className="border-r border-line  px-4 py-3">
+          <div className="border-[0.5px] border-line  px-4 py-3">
             <p className="text-sm  text-ink-2">LOCATION</p>
             <p>MANITOBA</p>
           </div>
-          <div className="border-r border-line  px-4 py-3">
+          <div className="border-[0.5px] border-line  px-4 py-3">
             <p className="text-sm  text-ink-2">EDUCATION</p>
             <p>B.SC CS - BRANDON U</p>
           </div>
-          <div className="px-4 py-3">
+          <div className=" border-[0.5px] border-line px-4 py-3">
             <p className="text-sm  text-ink-2">STATUS</p>
             <p className="text-cobalt">OPEN TO WORK</p>
           </div>
