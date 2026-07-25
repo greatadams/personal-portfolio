@@ -17,7 +17,7 @@ export default function StackTable() {
             return (
               <div
                 key={sta.stackCategory}
-                className="grid grid-cols-[200px_1fr]  border-b border-line last:border-b-0"
+                className="grid grid-cols-1 md:grid-cols-[200px_1fr]  border-b border-line last:border-b-0"
               >
                 <div className="border-r border-line">
                   <h4 className="font-mono text-xs text-cobalt uppercase px-6 py-4">

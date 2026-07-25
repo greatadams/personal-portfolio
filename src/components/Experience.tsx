@@ -16,7 +16,7 @@ export default function Experiences() {
           return (
             <div
               key={exp.experienceType}
-              className="grid grid-cols-[180px_1fr] py-6 text-sm border-b border-line last:border-b-0"
+              className="grid grid-cols-1 md:grid-cols-[180px_1fr] py-6 text-sm border-b border-line last:border-b-0"
             >
               <p className="font-mono text-ink-2">{exp.experienceType}</p>
 
