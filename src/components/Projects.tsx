@@ -17,10 +17,10 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <div
-              className="bg-paper grid grid-cols-[280px_1fr] border-[1.5px] border-ink mb-[-1.5px]"
+              className="bg-paper grid grid-cols-1 md:grid-cols-[280px_1fr] border-[1.5px] border-ink mb-[-1.5px]"
               key={project.projectTitle}
             >
-              <div className="border-r-[1.5px] border-ink  p-8 flex flex-col  ">
+              <div className="border-b-[1.5px] md:border-b-0 md:border-r-[1.5px] border-ink  p-8 flex flex-col  ">
                 <span className="font-display font-bold text-xl">
                   {project.projectTitle}
                 </span>
@@ -33,7 +33,7 @@ export default function Projects() {
               </div>
 
               <div
-                className={`p-8 ${project.projectPreview ? 'grid grid-cols-[1fr_220px] gap-8' : ''} `}
+                className={`p-8 ${project.projectPreview ? 'grid grid-cols-1 md:grid-cols-[1fr_220px] gap-8' : ''} `}
               >
                 <div>
                   <p className="text-ink-2 max-w-[64ch] ">
