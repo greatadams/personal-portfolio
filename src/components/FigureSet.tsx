@@ -15,7 +15,9 @@ export default function FigureSet({
 
   return (
     <div className="mt-6">
-      <div className=" border-[1.5px] border-ink bg-white overflow-hidden ${frameClass}`">
+      <div
+        className={`border-[1.5px] border-ink bg-white overflow-hidden ${frameClass}`}
+      >
         <img
           src={images[current]}
           alt="Project screenshot"
