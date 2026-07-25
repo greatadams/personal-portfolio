@@ -17,19 +17,20 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <div
-              className="bg-paper grid grid-cols-1 md:grid-cols-[280px_1fr] border-[1.5px] border-ink mb-[-1.5px]"
+              className="bg-paper grid grid-cols-1 md:grid-cols-[280px_1fr] border-[1.5px] border-ink mb-[-1.5px]
+               hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0_#10141C]  hover:z-10 transition relative"
               key={project.projectTitle}
             >
-              <div className="border-b-[1.5px] md:border-b-0 md:border-r-[1.5px] border-ink  p-8 flex flex-col  ">
-                <span className="font-display font-bold text-xl">
+              <div className="border-b-[1.5px] md:border-b-0md:border-r-[1.5px] border-ink  p-8 flex flex-col  ">
+                <h3 className="font-display font-bold text-xl">
                   {project.projectTitle}
-                </span>
-                <span className="font-mono text-xs text-cobalt leading-relaxed">
+                </h3>
+                <p className="font-mono text-xs text-cobalt leading-relaxed">
                   {project.projectSubtitle}
-                </span>
-                <span className="mt-auto font-mono text-xs text-ink-2">
+                </p>
+                <p className="mt-auto font-mono text-xs text-ink-2">
                   {project.projectStatus}
-                </span>
+                </p>
               </div>
 
               <div
