@@ -7,7 +7,11 @@ export const projects: Project[] = [
         projectParagraph:"A full ride-hailing platform built for Brandon's local cab companies, now in beta: real-time driver dispatch over WebSockets, live location broadcasting, driver heartbeat monitoring with automatic ghost-session cleanup, and race-condition-safe ride lifecycle handling. Deployed on Railway with an iOS TestFlight track.",
         projectStack:["Java · Spring Boot", "WebSockets", "PostgreSQL", "React Native", "Railway"],
         projectStatus: "IN BETA — TESTFLIGHT",
-        projectPreview:["assets/taxinow-1.png", "assets/taxinow-2.png"]
+        projectPreview:["assets/driver-create.png","assets/driver-history.png", "assets/driver-home.png", "assets/driver-login.png","assets/driver-pickup1.png", "assets/driver-pickup2.png", "assets/driver-pickup3.png", "assets/driver-pickup4.png","assets/driver-profile.png" , "assets/rider-booking1.jpg","assets/rider-booking2.jpg","assets/rider-booking3.jpg",
+            "assets/rider-booking4.jpg","assets/rider-create.jpg","assets/rider-create.jpg","assets/rider-history.jpg","assets/rider-home.jpg","assets/rider-login.jpg","assets/rider-profile.jpg"
+
+        ],
+        previewType: "phone"
     },
 
 
@@ -18,7 +22,9 @@ export const projects: Project[] = [
         projectStack:["Spring Boot", "JWT/RBAC", "React · TypeScript", "Vercel"],
         projectLink:[{label: "Live app", url: "https://rampsecure.vercel.app/"}, {label: "Source", url: "https://github.com/greatadams/rampsecure"}],
         projectStatus: "DELIVERED TO CLIENT",
-        projectPreview:["assets/rampsecure-1.png", "assets/rampsecure-2.png"],
+        projectPreview:["assets/rampsecure-admin-home.png", "assets/rampsecure-checkout-checkin-bg.png", "assets/rampsecure-checkout.png","assets/rampsecure-create-user.png","assets/rampsecure-edit-user.png","assets/rampsecure-login.png","assets/rampsecure-supervisor-home.png"
+        ],
+        previewType:"browser"
     },
     
     {

@@ -3,6 +3,7 @@ export type ProjectLink = {
     label: string
 }
 
+
 export type Project ={
 projectTitle:string,
 projectSubtitle:string,
@@ -11,6 +12,7 @@ projectStack:string [],
 projectLink?:ProjectLink[],
 projectStatus: string,
 projectPreview?:string[],
+previewType?: "phone" | "browser"
 }
 
 export type Stack={

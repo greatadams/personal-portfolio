@@ -1,4 +1,5 @@
 import { projects } from '../data/project';
+import FigureSet from './FigureSet';
 
 export default function Projects() {
   return (
@@ -31,50 +32,47 @@ export default function Projects() {
                 </span>
               </div>
 
-              <div className=" p-8 ">
-                <p className="text-ink-2 max-w-[64ch] ">
-                  {project.projectParagraph}
-                </p>
-                <div className="flex flex-wrap border border-line mt-5">
-                  {project.projectStack.map((list) => {
-                    return (
-                      <span
-                        className="font-mono text-xs px-3 py-1 border-r border-line text-ink-2 last:border-r-0"
-                        key={list}
-                      >
-                        {list}
-                      </span>
-                    );
-                  })}
+              <div
+                className={`p-8 ${project.projectPreview ? 'grid grid-cols-[1fr_220px] gap-8' : ''} `}
+              >
+                <div>
+                  <p className="text-ink-2 max-w-[64ch] ">
+                    {project.projectParagraph}
+                  </p>
+                  <div className="flex flex-wrap border border-line mt-5">
+                    {project.projectStack.map((list) => {
+                      return (
+                        <span
+                          className="font-mono text-xs px-3 py-1 border-r border-line text-ink-2 last:border-r-0"
+                          key={list}
+                        >
+                          {list}
+                        </span>
+                      );
+                    })}
+                  </div>
+                  {project.projectLink && (
+                    <div className="flex gap-5 mt-5">
+                      {project.projectLink.map((link) => {
+                        return (
+                          <a
+                            className="font-mono text-sm text-cobalt border-b-[1.5px] border-cobalt"
+                            href={link.url}
+                            key={link.url}
+                          >
+                            {link.label}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
 
-                {project.projectLink && (
-                  <div className="flex gap-5 mt-5">
-                    {project.projectLink.map((link) => {
-                      return (
-                        <a
-                          className="font-mono text-sm text-cobalt border-b-[1.5px] border-cobalt"
-                          href={link.url}
-                          key={link.url}
-                        >
-                          {link.label}
-                        </a>
-                      );
-                    })}
-                  </div>
-                )}
                 {project.projectPreview && (
-                  <div>
-                    {project.projectPreview.map((img) => {
-                      return (
-                        <img
-                          src={img}
-                          key={img}
-                          alt="description per slide preview"
-                        />
-                      );
-                    })}
-                  </div>
+                  <FigureSet
+                    images={project.projectPreview}
+                    variant={project.previewType}
+                  />
                 )}
               </div>
             </div>
