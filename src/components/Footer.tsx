@@ -26,6 +26,8 @@ export default function Footer() {
           <li>
             <a
               href="https://github.com/greatadams"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center border-[1.5px] font-mono text-sm border-ink px-6 py-3 hover:bg-cobalt/10 hover:text-cobalt hover:border-cobalt hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_#10141C] transition active:translate-x-0 active:translate-y-0 active:shadow-none"
             >
               GitHub
@@ -34,6 +36,8 @@ export default function Footer() {
           <li>
             <a
               href="https://linkedin.com/in/great-adamu"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center border-[1.5px] font-mono text-sm border-ink px-6 py-3 hover:bg-cobalt/10 hover:text-cobalt hover:border-cobalt hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_#10141C] transition active:translate-x-0 active:translate-y-0 active:shadow-none "
             >
               LinkedIn

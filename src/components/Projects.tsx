@@ -59,6 +59,8 @@ export default function Projects() {
                           <a
                             className="font-mono text-sm text-cobalt border-b-[1.5px] border-cobalt"
                             href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={link.url}
                           >
                             {link.label}
